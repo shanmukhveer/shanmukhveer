@@ -5,7 +5,7 @@ class voc
 	{
 		Scanner sc=new Scanner(System.in);
 		char ch;
-		System.out.println("eneter the character");
+		System.out.print("eneter the character:\t");
 		 ch=sc.next().charAt(0);
 		switch(ch)
 		{
@@ -18,9 +18,9 @@ class voc
 			case 'E':
 			case 'I':
 			case 'O':
-			case 'U':System.out.println("vowel");
+			case 'U':System.out.println("\tvowel");
 			break;
-			default:System.out.println("consonant");
+			default:System.out.println("\tconsonant");
 		}
 	}
 }
