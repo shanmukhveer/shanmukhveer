@@ -1,0 +1,35 @@
+import java.util.Scanner; 
+import java.io.*; 
+import java.util.*;
+ public class ass
+ { public static void main(String[] args)
+ { Scanner sc = new Scanner( System.in); 
+ int i,n, even = 0, odd = 0; 
+ System.out.print(" Enter a number=");
+  n = sc.nextInt();
+  while(n > 0)
+  { 
+  i = n%10;
+   if(i%2 == 0)
+   { 
+   even = (even*10) + i;
+    } 
+    else
+    { 
+    odd = (odd*10) + i;
+     } 
+     n = n/10; 
+     } 
+     int re = 0; 
+     while(even != 0) 
+     { 
+     int digit = even % 10; 
+     re = re * 10 + digit; 
+     even /= 10; } 
+     int ro = 0; 
+     while(odd != 0) 
+     { int digit = odd % 10; 
+     ro = ro * 10 + digit; odd/= 10; }
+      System.out.println("\tEven digits = " + re); System.out.println("\tOdd digits = " + ro);
+       } 
+       }
