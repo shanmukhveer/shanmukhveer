@@ -9,7 +9,7 @@ return (n % sum == 0);
 }
 public static void main(String[] args)  
 {
-System.out.println(checkHarshad(22) ? "\tYes" : "\tNo");
-System.out.println(checkHarshad(156) ? "\tYes" : "No");
+System.out.println(checkHarshad(22) ? "\t harshadnumber " : "\t Not Harshad number");
+System.out.println(checkHarshad(156) ? "\harshad number" : "\t not Harshad number ");
 }
 }
