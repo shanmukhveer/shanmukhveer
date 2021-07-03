@@ -1,0 +1,25 @@
+import java.util.*;
+ class automorphic{
+	public static void main(String[] args) {
+	   Scanner sc=new Scanner(System.in);
+	   System.out.print("  enter the value of N:-");
+	   int n=sc.nextInt();
+    int m=n;
+    int flag=0, s=n*n;		
+    while(n!=0)
+    {
+    	int p=n%10;int k=s%10;
+    	if(p !=k) flag=1;
+    	n=n/10;s=s/10;
+	}
+	if(flag==0)
+	{ 
+	System.out.print(" automorphic number");
+	}
+	else
+	{
+		System.out.print(" not a automorphic number");
+	}
+	}
+	
+}
