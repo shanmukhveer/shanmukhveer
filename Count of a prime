@@ -1,0 +1,49 @@
+import java.util.*;
+class prime {
+     public static void main(String[] args) {
+     Scanner sc=new Scanner(System.in);
+     int i,j,k,p=0;
+     System.out.print(" enter the value of n:-");
+     int n=sc.nextInt();
+     for(i=2;i<=n;i++)
+     {
+       k=1;
+       for(j=2;j<i;j++)
+       {
+	if(i%j==0)
+	{
+	k=0;
+	break;
+	}
+	}
+	if(k==1)
+	p++;
+         }
+	System.out.println(" count of prime :- " +p);
+			
+      }
+}import java.util.*;
+public class prime {
+	public static void main(String[] args) {
+	Scanner sc=new Scanner(System.in);
+	int i,j,k,p=0;
+	System.out.print(" enter the value of n:-");
+	int n=sc.nextInt();
+	for(i=2;i<=n;i++)
+	{
+	k=1;
+	for(j=2;j<i;j++)
+	{
+	if(i%j==0)
+	{
+	k=0;
+	break;
+	}
+       	}
+	if(k==1)
+	p++;
+	}
+	System.out.println(" count of prime :- " +p);
+			
+	}
+}
