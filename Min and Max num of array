@@ -21,6 +21,6 @@ public static void main(String args[])
 	max=(int)(Math.max(ar[i],max));
 	}
 	System.out.println("maximum value is:"+max);
-	System.out.println("maximum value is:"+min);
+	System.out.println("minimum value is:"+min);
 }
 }
