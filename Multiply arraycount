@@ -1,0 +1,33 @@
+import java.util.*;
+class multiplyarraycount
+{
+public static void main(String args[])
+{
+	int size,i,k,even=0,odd=0;
+	Scanner sc=new Scanner(System.in);
+	System.out.println("enter array size:");
+	size=sc.nextInt();
+	int ar[];
+	ar=new int[size];
+	System.out.println("enter array elements:");
+	for(i=0;i<size;i++)
+	{
+	ar[i]=sc.nextInt();
+	}
+	for(i=0;i<size;i++)
+	{
+	if(ar[i]%2==0)
+	even++;
+	else
+	odd++;
+	}
+	k=even*odd;
+	System.out.println("count of Even digits="+even);
+	System.out.println("count of odd digits="+odd);
+	System.out.println("multiplication="+k);
+	if(k%2==0)
+	System.out.println("count is Even");
+	else
+	System.out.println("count  is Odd");	
+}
+}
