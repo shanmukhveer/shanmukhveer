@@ -1,0 +1,51 @@
+import java.util.*;
+class diagonal_matrix
+{
+public static void main(String args[])
+{
+	int p,k,i,j,s;
+	Scanner sc=new Scanner(System.in);
+	System.out.println("enter number of rows:");
+	p=sc.nextInt();
+	System.out.println("enter number of columns:");
+	k=sc.nextInt();
+	int ar[][];
+	ar=new int[p][k];
+	System.out.println("enter array elements:");
+	for(i=0;i<p;i++)
+	{
+		for(j=0;j<k;j++)
+			ar[i][j]=sc.nextInt();
+	}
+	for(i=0;i<p;i++)
+	{
+		f=0;
+		for(j=0;j<k;j++)
+		{
+			if(i==j)
+			{
+				if(ar[i][j]==0)
+				{
+					s=1;
+					break;
+				}
+			
+			}
+			else
+			{
+				if(ar[i][j]!=0)
+				{
+					s=1;
+					break;
+				}
+			}
+		}
+		if(s==1)
+			break;
+	}
+	if(i==p)
+		System.out.println("Given matrix is diagonal matrix");
+	else
+		System.out.println("Given matrix is not diagonal matrix");
+}
+}
