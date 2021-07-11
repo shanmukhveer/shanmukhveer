@@ -1,0 +1,24 @@
+import java.util.*;
+class even_odd
+ {
+    public static void main(String[] args) 
+   {
+        String str;
+        Scanner sc=new Scanner(System.in);
+        System.out.print("enter the string;-  ");
+        str=sc.next();
+        int n=str.length();
+        System.out.print("odd pos:- ");
+        for(int i=0;i<n;i++)
+        {
+            if(i%2==0)
+            System.out.print(str.charAt(i));
+        }
+        System.out.print("even pos:- ");
+        for(int i=0;i<n;i++)
+        {
+            if(i%2!=0)
+            System.out.print(str.charAt(i));
+        }
+    }
+}
