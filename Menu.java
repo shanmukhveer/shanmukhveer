@@ -6,15 +6,15 @@ public static void main(String args[])
 Scanner sc=new Scanner(System.in);
 LinkedList<Integer> menu=new LinkedList<Integer>();
 int size=sc.nextInt();
-int n,y,index;
+int n,k,index;
 System.out.println("enter elements");
 for(int i=0;i<size;i++)
 menu.add(sc.nextInt());
 System.out.println("1.BeginInsert \n2.EndInsert\n3.Position Insert\n4.Begin Delete\n5.End Delete\n6.Position Delete\n7.Display\n8.Exit1\n.....Enter your Choice:");
-y=sc.nextInt();
+k=sc.nextInt();
 do
 {
-switch(y)
+switch(k)
 {
 case 1: System.out.println("Enter n value");
 n=sc.nextInt();
@@ -51,7 +51,7 @@ break;
 default: System.out.println("Invalid Choice");
 }
 System.out.println("1.BeginInsert\n2.EndInsert \n3. Position Insert\n4. Begin Delete\n5. End Delete\n6. Position Delete\n7. Display\n8. Exit1\n.....Enter your Choice:");
-y=sc.nextInt();
-}while(y<8);
+k=sc.nextInt();
+}while(k<8);
 }
 }
